@@ -66,8 +66,8 @@ src/
 
 🛠️  SETUP
 # 1️⃣ Clone the repository
-git clone https://github.com/your-username/react-redux-product-dashboard.git
-cd react-redux-product-dashboard
+git clone https://github.com/raghavk1/Shop-Project-Assignment.git
+cd Shop
 
 # 2️⃣ Install dependencies
 npm install
