@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+input,
+button,
+select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  background: #222;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.navbar a:hover {
+  background: #444;
+}
+.navbar span {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+}
+.product-card img {
+  max-height: 150px;
+  max-width: 200px;
+}
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+.detail {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.btn,
+button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover,
+button:hover {
+  background: #0056b3;
+}
+.btn:disabled,
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+}
+
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-input {
+  width: 400px;
+}
+.favourite-msg {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+}
+
+.toast {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+  animation: fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.product-page-image {
+  max-width: 300px;
+  max-height: 300px;
+}
